@@ -17,7 +17,7 @@ cloudshell launch-tutorial -d advancedtutorial.md
 
 The config.py file contains the keys that the program will need to run, whether these are Ameritrade, Alpaca or other API keys.
 
-<a  href="https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/Photon1c/CheddarButler&tutorial=TUTORIAL_FILE.md">
+<a  href="https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/Photon1c/CheddarButler&tutorial=tutorial.md">
     <img alt="Open in Cloud Shell" src="http://gstatic.com/cloudssh/images/open-btn.png">
 </a>
 
