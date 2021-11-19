@@ -1,0 +1,3 @@
+11.18.21- The repository has been populated with the appropriate files, and now the task at hand is to harmonize the documentation with the tutorial files,
+in addition to creating an advanced tutorial file, and generating a correct requirements.txt file in addition to an environment creator file, like a YAML file.
+
