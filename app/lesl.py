@@ -1,3 +1,5 @@
-td_account = 865241520
-username = "goldenburrito"
-password = "Guacam0lesa1"
+''''this file is required to pull portfolio balances for the sell.py function''''
+
+td_account = ###
+username = ""
+password = ""
