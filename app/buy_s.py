@@ -21,7 +21,7 @@ print("The top daily stock gainers are: ")
 print(gm[['change','last', 'symbol', 'totalVolume']])
 print("The top daily stock losers are: ")
 print(gm2[['change','last', 'symbol', 'totalVolume']])
-gm['symbol'].to_csv(r'C:\Users\Spark\Desktop\projects\tradesetandforget\csvs\mover_list.csv')
+gm['symbol'].to_csv(r'[PATH]')
 gm3 = pd.DataFrame()
 gm4 = pd.DataFrame()
 print("The cumulative gain for the up stocks is:")
@@ -37,7 +37,7 @@ print(gm4)
 #First source of stocks is url containing thousands of stocka, so it is disabled by default 
 #s = pd.read_csv(url, sep = '\t', names=["Symbol", "cusip"])
 #second source is csv file in project
-s_alt = pd.read_csv(r'C:\Users\Spark\Desktop\projects\tradesetandforget\csvs\mover_list.csv')
+s_alt = pd.read_csv(r'[PATH]')
 #Create Symbols From Dataset
 Symbols = s_alt['symbol'].tolist()
 target_symbols = []
@@ -63,12 +63,3 @@ for i in Symbols:
 print("The target symbols are: ")
 print(target_symbols)
 print("Buy Stocks function complete. Initiating Buy Options function...")
-
-
-
-
-
-    
-#Set the target variable to the selected symbol in final candidate stock dataframe, ts
-
-
