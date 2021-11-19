@@ -20,7 +20,7 @@ print(gm[['change','last', 'symbol', 'totalVolume']])
 print(gm2[['change','last', 'symbol', 'totalVolume']])
 #print(gmt)
 #move to csv
-gm['symbol'].to_csv(r'C:\Users\Spark\Desktop\projects\tradesetandforget\csvs\mover_list.csv')
+gm['symbol'].to_csv(r'..\csvs\mover_list.csv')
 #print(getmovers)
 
 gm3 = pd.DataFrame()
