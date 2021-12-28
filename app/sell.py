@@ -20,11 +20,12 @@ TDSession = TDClient(
 Sell1 = TDSession.get_accounts(account=lesl.td_account, fields=['positions'])
 try:
     Sell2 = pd.json_normalize(Sell1)
+except NotImplementedError as err:
+    Sell2 = pd.json_normalise(Sell1)        
 except AttributeError as err:
     Sell2 = pd.json_normalise(Sell1)
 except TypeError as err:
     Sell2 = pd.json_normalise(Sell1)    
-
 Sell3 = pd.json_normalize(Sell1['securitiesAccount']['positions'])
 Sell4 = pd.DataFrame(Sell2['securitiesAccount.positions'])
 Sell5cash = pd.DataFrame(Sell2['securitiesAccount.initialBalances.totalCash'])
@@ -125,7 +126,7 @@ for i in target_symbols_s:  #this is the order template for placing a stock sale
         "orderLegCollection": [
             {
                 "instruction": "SELL",
-                "quantity": GPB4_quantity,
+                "quantity": int(GPB_S['previousSessionLongQuantity']),
                 "instrument": {
                     "symbol": i,
                     "assetType": "EQUITY"
@@ -157,7 +158,7 @@ for i in target_symbols_o:  #this is the order template for placing an option sa
         "orderLegCollection": [
             {
             "instruction": "SELL_TO_CLOSE",
-            "quantity": GPB4_quantity,
+            "quantity": int(GPB_O['previousSessionLongQuantity']),
             "instrument": {
                 "symbol": i,
                 "assetType": "OPTION"
@@ -184,13 +185,7 @@ def print_sell_log():
     print(GPB8)
     print("The current cash balance is: ")
     print(cash)
-    print("The revised dataframe for stocks is: ")
-    print(GPB_S)
-    print("The revised dataframe for options is: ")
-    print(GPB_O)
-    print("The revised dataframe for cash is: ")
-    print(GPB_C)
-    print("The target symbols of owned stocks are: ")
+    print("The stocks owned are: ")
     if GPB_S.empty:
         print("There are no owned stocks at the moment")
     else:
