@@ -1,4 +1,5 @@
-Welcome to the CheddarButlerTutorial. Click Start to begin the tutorial.
+<walkthrough-open-cloud-shell-button></walkthrough-open-cloud-shell-button>
+Welcome to the CheddarButler tutorial. Click the button above to launch this on a Google Cloud Shell environment.
 
 Introduction
 
@@ -14,7 +15,7 @@ The advanced setup tutorial can be accessed by entering the following command in
 cloudshell launch-tutorial -d advancedtutorial.md
 
 
-Initial Configutation
+Initial Configuration
 
 The config.py file contains the keys that the program will need to run, whether these are Ameritrade, Alpaca or other API keys.
 
@@ -38,7 +39,7 @@ information on how to set these up please check out the advanced tutorial. For t
 a general description of the non-broker linked app follows.
 
 Stocks and their symbols can be collected into a list that can either be further saved as a csv file or kept as a list object in the program. The way the program is set up is such that 
-a csv file is created so that the next step can call the file, but further configuration of this could include simply callin the list object without having to write and read to and from
+a csv file is created so that the next step can call the file, but further configuration of this could include simply calling the list object without having to write and read to and from
 these csv files, which are saved in the csvs folder. The purpose of this is for user friendliness- this way tickers can be manually added to the file, or the file can be analyzed
 and copied to new files which serve different purposes. 
 
