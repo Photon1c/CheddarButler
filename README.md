@@ -1,5 +1,5 @@
 <walkthrough-open-cloud-shell-button></walkthrough-open-cloud-shell-button>
-Welcome to the CheddarButler tutorial. Click the button above to launch this on a Google Cloud Shell environment.
+Welcome to the CheddarButler tutorial. Click the button above to launch this on a Google Cloud Shell environment. If there is no button, you are viewing this on Github. The link to the Google Tutorial is here: 
 
 Introduction
 
