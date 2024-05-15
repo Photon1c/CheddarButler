@@ -2,7 +2,7 @@
 Welcome to the CheddarButler tutorial. Click the button above to launch this on a Google Cloud Shell environment. If there is no button, you are viewing this on Github. The link to the Google Tutorial is here: 
 
 ```diff
-- Update: As of May 2024 TD Ameritrade has deprecated its APIs due to its acquisition by Schwabb. This project is now in the sunset stage and this repository is mainly used to build more up to date libraries, like Alpaca trading API.
+- Update: As of May 2024 TD Ameritrade has deprecated its APIs due to its acquisition by Schwabb. This project is now in the sunset stage and this repository is mainly used to build from more up to date libraries, like Alpaca trading API.
 ```
 
 Introduction
